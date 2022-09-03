@@ -1,5 +1,5 @@
 body {
-  background-color: #e5e5e5;
+  background-color: #0a3871;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,9 +9,8 @@ body {
   margin: 40px auto;
   width: 1440px;
   height: 1024px;
-  background-color: #F3F5FC;
+  background-color:#95a9f0;
   display: flex;
-  /* border-radius: 32px; */
 }
 
 .logo {
@@ -20,7 +19,6 @@ body {
 }
 
 .cont-input {
-  background-color:#F3F5FC;
   width: 950px;
   height: 1024px;
 }
@@ -30,7 +28,7 @@ textarea {
   height: 48px;
   border: 0;
   font-size: 32px;
-  background-color:#F3F5FC;
+  background-color:#95a9f0;
   color: #0a3871;
   margin-top: 168px;
   margin-left: 240px;
@@ -63,7 +61,6 @@ textarea {
 button {
   width: 328px;
   height: 67px;
-  border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
   border: 2px solid #0a3871;
@@ -74,18 +71,18 @@ button {
   margin-left: 200px;
   margin-right: 20px;
   background-color: #0a3871;
-  color: white;
+  color: rgb(174, 231, 250);
 }
 
-.desencreptar{
-background-color: #D8DFE8;
+.desencriptar{
+background-color:#d2d9f2;
 color: #0A3871;
 }
 
 .cont-desencriptador {
   width: 400px;
   height: 944px;
-  background-color:white;
+  background-color: #d2d9f2;
   margin-left: 40px;
   margin-top: 40px;
   border-radius: 32px;
@@ -116,4 +113,155 @@ h2 {
     color:#495057;
     margin: 16px auto;
   }
+
+  footer{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+
   
+/****####---- DISEÑO RESPONSIVE TABLET ----####****/
+
+
+@media (max-width:960px){
+
+.container{
+  margin: 0;
+  flex-direction: column;
+  width: 768px;
+  height: 1174px;
+  
+}
+
+.logo {
+  margin-top: 74px;
+  margin-left: 40px;
+}
+
+
+.cont-input {
+  background-color:#95a9f0;
+  width: 768px;
+
+  
+}
+
+textarea {
+  width: 688px;
+  margin-top: 120px;
+  margin-left: 40px;
+  line-height: 48px;
+}
+
+.cont-rules {
+  height: 18px;  
+  margin-top: 548px;
+  margin-left: 64px;
+}
+
+.encriptar{
+  margin-left: 40px;
+}
+
+.cont-desencriptador {
+  width: 688px;
+  height: 133px;
+  background-color:white;
+  margin-left: 40px;
+  margin: 30px 40px;
+}
+
+.munieco {
+display: none;
+}
+
+h2 {
+  width: 624px;
+  height: 29px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.indicaciones {
+    text-align: center;
+    width: 624px;
+    height: 24px;
+  }
+  
+
+  footer{
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+}
+
+/****####---- DISEÑO RESPONSIVE MOBILE ----####****/
+
+@media (max-width:480px){
+
+.container{
+  margin: 0;
+  flex-direction: column;
+  width: 375px;
+  height: 933px;
+  
+}
+
+.logo {
+  margin-top: 24px;
+  margin-left: 16px;
+}
+
+
+.cont-input {
+  background-color:#95a9f0;
+  width: 375px;
+
+  
+}
+
+textarea {
+  width: 343px;
+  margin-top: 152px;
+  margin-left: 15px;
+}
+
+.cont-rules {
+  height: 18px;  
+  margin-top: 251px;
+  margin-left: 16px;
+}
+
+.encriptar{
+  margin-left: 16px;
+}
+
+.desencriptar{
+  margin-left: 16px;
+  margin-top: 40px;
+}
+.cont-desencriptador {
+  width: 327px;
+  height: 186px;
+  margin: 24px 40px;
+}
+
+h2 {
+  width: 263px;
+  height: 58px;
+}
+
+.indicaciones {
+    width: 263px;
+    height: 48px;
+  }
+  
+
+  footer{
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+}
