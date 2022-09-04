@@ -27,7 +27,7 @@ body {
   height: 1024px;
 }
 
-textarea{
+#txt-a-encriptar{
   width: 577px;
   font-size: 32px;
   background-color:#95a9f0;
@@ -96,8 +96,19 @@ color: #0A3871;
   border-radius: 32px;
 }
 
+#txt-desencriptado{
+  width: 338px;
+  height: 200px;
+  margin: 40px 30px;
+  font-size: 32px;
+  color: #0A3871;
+  resize: none;
+  border-style: none;
+  background-color: #d2d9f2;
+}
+
 .munieco {
-  margin-top: 283px;
+  margin-top: 5px;
   width: 100%;
 }
 
@@ -128,6 +139,10 @@ h2 {
     margin-bottom: 20px; 
   }
 
+
+  .des{
+    color: red;
+  }
   
 /****####---- DISEÑO RESPONSIVE TABLET ----####****/
 
@@ -155,7 +170,7 @@ h2 {
   
 }
 
-textarea {
+#txt-a-encriptar {
   width: 688px;
   margin-top: 120px;
   margin-left: 40px;
@@ -231,7 +246,7 @@ h2 {
   
 }
 
-textarea {
+#txt-a-encriptar {
   width: 343px;
   margin-top: 20px;
   margin-left: 15px;

@@ -13,25 +13,29 @@
         <div class="cont-logo">
           <img src="./imagenes/logoalura.svg" alt="logo de Alura" class="logo" />
         </div>
-        <textarea name="text" id="" cols="20" rows="8" placeholder="Ingrese el texto aqui"></textarea>
+        <textarea name="text" id="txt-a-encriptar" cols="20" rows="8" placeholder="Ingrese el texto aqui"></textarea>
         <div class="cont-rules">
         <img src="./imagenes/Vector.svg" alt="vector-warning" class="vector">
         <p class="rules">Sólo letras minúsculas y sin acentos</p>
       </div>
-        <button class="encriptar">Encriptar</button>
-        <button class="desencriptar">Desencriptar</button>
+        <button class="encriptar" onclick="encriptar(); ocultar()">Encriptar</button>
+        <button class="desencriptar"onclick="desencriptar()" >Desencriptar</button>
       </div>
       <div class="cont-desencriptador">
+        <textarea id="txt-desencriptado"></textarea>
+        <div id="cont-ocultar">
         <figure>
           <img src="./imagenes/Muñeco.svg" alt="" class="munieco" width=""/>
         </figure>
         <h2>Ningún mensaje fue encontrado</h2>
         <p class="indicaciones">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+        
       </div>
     </div>
 
     <footer>Challenge desarrollado por Silvana Lima</footer>
 
-    <script src="./app.js"></script>
+  <script src="./app.js"></script>
   </body>
 </html>
