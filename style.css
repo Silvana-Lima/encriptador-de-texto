@@ -2,23 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Teko', sans-serif;
+
 }
 
-#cont-output{
-  display: none;
+:root{
+  --pink: #f1005c;
+  --black: #000000;
+  --violet: #a525ac;
+  --aqua: #4daaa7;
+  --gray:#232323;
+  --lightGray:#ada8a8;
 }
 
 
 body {
-  background-color: #0a3871;
-  font-family: Tahoma, sans-serif;
+  /* background-color: var(--gray); */
+  background: linear-gradient(45deg,var(--black),var(--pink),var(--violet),var(--black));
 }
 .container {
   margin: 40px auto;
   width: 1440px;
   height: 1024px;
-  background-color:#95a9f0;
+  background-color:var(--black);
   display: flex;
+  border: 2px solid var(--pink);
 }
 
 .logo {
@@ -34,32 +42,35 @@ body {
 #txt-a-encriptar{
   width: 577px;
   font-size: 32px;
-  background-color:#95a9f0;
-  color: #0a3871;
+  background-color:var(--black);
   margin-top: 168px;
   margin-left: 240px;
   line-height: 48px;
   line-height: 150%;
   resize: none;
   border-style: none;
+  color: var(--pink);
 
 }
 
 ::placeholder { 
-    color:#0a3871; 
+    color:var(--pink); 
 }
 
+textarea:focus{
+  outline: 0 none;
+}
 
 .cont-rules {
   width: 300px;
   height: 16px;  
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 25px;
   margin-top: 200px;
   margin-left: 200px;
   margin-bottom: 16px;
-  color:#495057;
+  color:var(--lightGray);
   opacity: 0.80;
 }
 
@@ -71,9 +82,10 @@ body {
 button {
   width: 328px;
   height: 67px;
-  font-size: 16px;
+  font-size: 28px;
   font-weight: 400;
-  border: 2px solid #0a3871;
+  border: 2px solid ;
+  border-color: var(--violet);
   border-radius: 24px;
 
 }
@@ -81,23 +93,37 @@ button {
 .encriptar{
   margin-left: 200px;
   margin-right: 20px;
+  border: 4px solid var(--aqua);
+  background-color: var(--violet);
+  color: var(--black);
+}
 
-  background-color: #0a3871;
-  color: rgb(174, 231, 250);
+.encriptar:hover{
+  background-color: var(--aqua);
+
 }
 
 .desencriptar{
-background-color:#d2d9f2;
-color: #0A3871;
+background-color:var(--aqua);
+color: var(--black);
+border: 4px solid var(--violet);
 }
+
+.desencriptar:hover{
+  background-color: var(--violet);
+}
+
 
 .cont-desencriptador {
   width: 400px;
   height: 944px;
-  background-color: #d2d9f2;
+  background-color: var(--black);
   margin-left: 40px;
   margin-top: 40px;
   border-radius: 32px;
+  border: 4px solid;
+  border-color: var(--aqua);
+  /* background: linear-gradient(var(--pink),var(--violet)); */
 }
 
 .munieco {
@@ -109,9 +135,9 @@ h2 {
   text-align: center;
   width: 336px;
   height: 58px;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 29px;
-  color: #343A40;
+  color: var(--violet);
   font-style: bold;
   margin: auto;
 }
@@ -120,42 +146,47 @@ h2 {
     text-align: center;
     width: 336px;
     height: 48px;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 24px;
-    color:#495057;
+    color:var(--lightGray);
     margin: 16px auto;
   }
+
+  #cont-output{
+    display: none;
+  }
+  
+
 
 #txt-desencriptado{
   width: 336px;
   height: 781px;
   margin-top: 32px;
   margin-left: 32px;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 36x;
-  color: #0A3871;
+  color: var(--pink);
   resize: none;
-  /* border-style: none; */
-  background-color: #d2d9f2;
+  border-style: none;
+  background-color: var(--black);
+  /* background: linear-gradient(var(--pink),var(--violet)); */
 }
 
 
 .copy{
   margin-left: 32px;
   margin-top: 20px;
+  background-color: var(--violet);
   
 }
 
   footer{
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 20px; 
+    color: var(--black);
   }
 
-
-  .des{
-    color: red;
-  }
   
 /****####---- DISEÑO RESPONSIVE TABLET ----####****/
 
@@ -178,10 +209,7 @@ h2 {
 
 
 .cont-input {
-  background-color:#95a9f0;
   width: 768px;
-
-  
 }
 
 #txt-a-encriptar {
@@ -204,7 +232,6 @@ h2 {
 .cont-desencriptador {
   width: 688px;
   height: 343px;
-  background-color:white;
   margin-left: 40px;
   margin-bottom: 40px;
 
@@ -234,13 +261,13 @@ h2 {
     text-align: center;
     width: 204px;
     height: 18px;
-    font-size: 12px;
   }
 
 
 #txt-desencriptado{
   width: 624px;
   height: 180px;
+  margin-top: 20px;
 
 }
 
@@ -252,7 +279,6 @@ h2 {
   
 
   footer{
-    font-size: 16px;
     margin-top: 20px;
   }
 
@@ -277,7 +303,6 @@ h2 {
 
 
 .cont-input {
-  background-color:#95a9f0;
   width: 375px;
 
   
@@ -293,6 +318,7 @@ h2 {
   height: 18px;  
   margin-left: 16px;
   margin-top: 10px;
+  font-size: 18px;
 }
 
 .encriptar{
@@ -343,7 +369,9 @@ margin: 10px auto;
   #txt-desencriptado{
     width: 287px;
     height: 350px;
-    margin: 20px;
+    margin-top: 0px;
+  
+
   
   }
 
@@ -358,7 +386,7 @@ margin: 10px auto;
   }
     
   footer{
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
   }
 
