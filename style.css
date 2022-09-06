@@ -7,26 +7,31 @@
 }
 
 :root{
-  --pink: #f1005c;
+  --pink: #ee25b2;
   --black: #000000;
-  --violet: #a525ac;
+  --violet: #9b47cd;
   --aqua: #4daaa7;
   --gray:#232323;
-  --lightGray:#ada8a8;
+  --lightGray:#9b47cd;
 }
 
 
 body {
-  /* background-color: var(--gray); */
-  background: linear-gradient(45deg,var(--black),var(--pink),var(--violet),var(--black));
+  background: linear-gradient(45deg,var(--black),var(--violet),var(--black)); 
+  background-repeat: no-repeat;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .container {
-  margin: 40px auto;
   width: 1440px;
   height: 1024px;
   background-color:var(--black);
   display: flex;
   border: 2px solid var(--pink);
+  margin: auto;
 }
 
 .logo {
@@ -57,7 +62,7 @@ body {
     color:var(--pink); 
 }
 
-textarea:focus{
+#txt-a-encriptar:focus{
   outline: 0 none;
 }
 
@@ -77,6 +82,7 @@ textarea:focus{
 .vector{
     width: 16px;
     margin-right: 8px;
+    color: var(--lightGray);
 }
 
 button {
@@ -117,27 +123,32 @@ border: 4px solid var(--violet);
 .cont-desencriptador {
   width: 400px;
   height: 944px;
-  background-color: var(--black);
+  background: linear-gradient(45deg,var(--black),var(--pink),var(--violet),var(--black));
   margin-left: 40px;
-  margin-top: 40px;
+  margin-top: 40px; 
   border-radius: 32px;
   border: 4px solid;
   border-color: var(--aqua);
-  /* background: linear-gradient(var(--pink),var(--violet)); */
 }
 
-.munieco {
+
+figure{
   margin-top: 243px;
+  margin-bottom: 20px;
+}
+
+.img-top-secret{
   width: 100%;
 }
 
 h2 {
+  display: none;
   text-align: center;
   width: 336px;
   height: 58px;
   font-size: 32px;
   line-height: 29px;
-  color: var(--violet);
+  color: rgb(99, 11, 99);
   font-style: bold;
   margin: auto;
 }
@@ -146,9 +157,9 @@ h2 {
     text-align: center;
     width: 336px;
     height: 48px;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 24px;
-    color:var(--lightGray);
+    color:var(--black);
     margin: 16px auto;
   }
 
@@ -162,14 +173,14 @@ h2 {
   width: 336px;
   height: 781px;
   margin-top: 32px;
-  margin-left: 32px;
+  margin-left: 27px; 
   font-size: 32px;
   line-height: 36x;
   color: var(--pink);
   resize: none;
   border-style: none;
   background-color: var(--black);
-  /* background: linear-gradient(var(--pink),var(--violet)); */
+  padding: 15px;
 }
 
 
@@ -180,11 +191,15 @@ h2 {
   
 }
 
+.copy:hover{
+  background-color: var(--pink);
+}
+
   footer{
     font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px; 
+    text-align: center; 
     color: var(--black);
+    margin-top: 15px;
   }
 
   
@@ -194,7 +209,6 @@ h2 {
 @media (max-width:960px){
 
 .container{
-  margin: 0;
   flex-direction: column;
   width: 768px;
   height: 1384px;
@@ -237,7 +251,7 @@ h2 {
 
 }
 
-.munieco {
+figure {
 display: none;
 }
 
@@ -250,6 +264,7 @@ display: none;
 
 
 h2 {
+  display: block;
   width: 100%;
   height: 29px;
   font-weight: 700;
@@ -268,7 +283,7 @@ h2 {
   width: 624px;
   height: 180px;
   margin-top: 20px;
-
+  margin-left: 26px;
 }
 
 
@@ -276,11 +291,6 @@ h2 {
   margin-left: 180px;
   
 }
-  
-
-  footer{
-    margin-top: 20px;
-  }
 
 }
 
@@ -289,7 +299,6 @@ h2 {
 @media (max-width:480px){
 
 .container{
-  margin-left: 0;
   flex-direction: column;
   width: 375px;
   height: 1270px;
@@ -334,11 +343,11 @@ h2 {
   height: 500px;
   margin: 40px auto;
 }
-.munieco {
+figure {
   display: block;
-  margin: 10px;
+  margin: 30px auto 0px;
   }
-  
+
 #cont-ocultar{
   display: flex;
   height: 100%;
@@ -348,7 +357,8 @@ h2 {
 
 
 h2 {
-margin: 10px auto;
+  display: none;
+  margin: 10px auto;
   width: 263px;
   height: 58px;
 }
@@ -367,9 +377,11 @@ margin: 10px auto;
 
 
   #txt-desencriptado{
-    width: 287px;
+    width: 319px;
     height: 350px;
     margin-top: 0px;
+    margin-left: 0;
+
   
 
   
@@ -377,7 +389,7 @@ margin: 10px auto;
 
 .copy{
     margin-left: 120px;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom:40px ;
 
     width: 100px;
@@ -387,7 +399,7 @@ margin: 10px auto;
     
   footer{
     font-size: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 }
