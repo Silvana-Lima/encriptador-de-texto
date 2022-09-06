@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+#cont-output{
+  display: none;
+}
+
 
 body {
   background-color: #0a3871;
@@ -96,19 +100,8 @@ color: #0A3871;
   border-radius: 32px;
 }
 
-#txt-desencriptado{
-  width: 338px;
-  height: 200px;
-  margin: 40px 30px;
-  font-size: 32px;
-  color: #0A3871;
-  resize: none;
-  border-style: none;
-  background-color: #d2d9f2;
-}
-
 .munieco {
-  margin-top: 5px;
+  margin-top: 243px;
   width: 100%;
 }
 
@@ -133,6 +126,26 @@ h2 {
     margin: 16px auto;
   }
 
+#txt-desencriptado{
+  width: 336px;
+  height: 781px;
+  margin-top: 32px;
+  margin-left: 32px;
+  font-size: 24px;
+  line-height: 36x;
+  color: #0A3871;
+  resize: none;
+  /* border-style: none; */
+  background-color: #d2d9f2;
+}
+
+
+.copy{
+  margin-left: 32px;
+  margin-top: 20px;
+  
+}
+
   footer{
     font-size: 20px;
     text-align: center;
@@ -153,9 +166,10 @@ h2 {
   margin: 0;
   flex-direction: column;
   width: 768px;
-  height: 1174px;
+  height: 1384px;
   
 }
+
 
 .logo {
   margin-top: 74px;
@@ -189,29 +203,52 @@ h2 {
 
 .cont-desencriptador {
   width: 688px;
-  height: 133px;
+  height: 343px;
   background-color:white;
   margin-left: 40px;
-  margin: 30px 40px;
+  margin-bottom: 40px;
+
 }
 
 .munieco {
 display: none;
 }
 
+#cont-ocultar{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
 h2 {
-  width: 624px;
+  width: 100%;
   height: 29px;
   font-weight: 700;
   line-height: 29px;
-  margin-top: 32px;
+  margin: 0;
 }
 
 .indicaciones {
     text-align: center;
-    width: 624px;
-    height: 24px;
+    width: 204px;
+    height: 18px;
+    font-size: 12px;
   }
+
+
+#txt-desencriptado{
+  width: 624px;
+  height: 180px;
+
+}
+
+
+.copy{
+  margin-left: 180px;
+  
+}
   
 
   footer{
@@ -229,7 +266,7 @@ h2 {
   margin-left: 0;
   flex-direction: column;
   width: 375px;
-  height: 933px;
+  height: 1270px;
   
 }
 
@@ -268,14 +305,24 @@ h2 {
 }
 .cont-desencriptador {
   width: 327px;
-  height: 186px;
-  margin-left: 16px;
-  margin-top: 40px;
-  margin: 20px 16px 40px;
+  height: 500px;
+  margin: 40px auto;
+}
+.munieco {
+  display: block;
+  margin: 10px;
+  }
+  
+#cont-ocultar{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h2 {
 
+h2 {
+margin: 10px auto;
   width: 263px;
   height: 58px;
 }
@@ -283,9 +330,33 @@ h2 {
 .indicaciones {
     width: 263px;
     height: 48px;
+    margin: 10px auto;
   }
+  #cont-output{
+    width: 327px;
+    height: 500px;
+    margin: 40px auto;
   
+  }
 
+
+  #txt-desencriptado{
+    width: 287px;
+    height: 350px;
+    margin: 20px;
+  
+  }
+
+.copy{
+    margin-left: 120px;
+    margin-top: 0px;
+    margin-bottom:40px ;
+
+    width: 100px;
+    height: 60px;
+    
+  }
+    
   footer{
     font-size: 16px;
     margin-top: 20px;

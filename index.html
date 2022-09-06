@@ -18,17 +18,22 @@
         <img src="./imagenes/Vector.svg" alt="vector-warning" class="vector">
         <p class="rules">Sólo letras minúsculas y sin acentos</p>
       </div>
-        <button class="encriptar" onclick="encriptar(); ocultar()">Encriptar</button>
-        <button class="desencriptar"onclick="desencriptar()" >Desencriptar</button>
+        <button class="encriptar" onclick="ocultar(); encriptar();">Encriptar</button>
+        <button class="desencriptar" onclick="ocultar(); desencriptarBtn();">Desencriptar</button>
       </div>
       <div class="cont-desencriptador">
-        <textarea id="txt-desencriptado"></textarea>
+        
         <div id="cont-ocultar">
         <figure>
           <img src="./imagenes/Muñeco.svg" alt="" class="munieco" width=""/>
         </figure>
         <h2>Ningún mensaje fue encontrado</h2>
         <p class="indicaciones">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+
+        <div id="cont-output">
+          <textarea id="txt-desencriptado"></textarea>
+          <button class="copy" id="copy" onclick="copy()">Copiar</button>
         </div>
         
       </div>
