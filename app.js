@@ -30,7 +30,7 @@ function encriptar() {
     } else if (letra == "u") {
       var letra = "ufat";
     } 
-    if (letra == "á" ||letra == "é" || letra == "í" ||letra == "ó" || letra == "ú" ||letra == "Á" || letra == "É" ||letra == "Í" ||letra == "Ó" ||letra == "Ú"  ) {
+    else if (letra == "á" ||letra == "é" || letra == "í" ||letra == "ó" || letra == "ú" ||letra == "Á" || letra == "É" ||letra == "Í" ||letra == "Ó" ||letra == "Ú"  ) {
       alert('Recuerda ingresar solo letras minúsculas y sin acentos!! :D');
     } 
      else {
