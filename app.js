@@ -1,5 +1,5 @@
 
-//////******* FUNCION OCULTAR MUÑECO ******//////
+//////******* FUNCION OCULTAR IMAGEN ******//////
 
 function ocultar() {
   document.getElementById("cont-ocultar").style.display = "none";
@@ -29,11 +29,15 @@ function encriptar() {
       var letra = "ober";
     } else if (letra == "u") {
       var letra = "ufat";
-    } else {
+    } 
+    if (letra == "á" ||letra == "é" || letra == "í" ||letra == "ó" || letra == "ú" ||letra == "Á" || letra == "É" ||letra == "Í" ||letra == "Ó" ||letra == "Ú"  ) {
+      alert('Recuerda ingresar solo letras minúsculas y sin acentos!! :D');
+    } 
+     else {
       var letra = textarea.value[j];
     }
 
-    acc = acc + `${letra}`;
+    acc = acc + `${letra.toLowerCase()}`;
   }
   mensaje.innerHTML = acc;
   textarea.value = "";
@@ -41,6 +45,7 @@ function encriptar() {
 }
 
 //////******* FUNCION DESENCRIPTAR ******//////
+
 
 function desencriptarBtn() {
   const TextoAdesencriptar = desencriptarTxt(textarea.value);
